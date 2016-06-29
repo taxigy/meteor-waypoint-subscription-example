@@ -12,6 +12,14 @@
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
+  <div class="things">
+    {{#each things}}
+    <div class="thing">
+      {{k}}
+    </div>
+    {{/each}}
+  </div>
+  <div id="waypoint">(more)</div>
 </template>
 
 <template name="info">
